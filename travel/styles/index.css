@@ -1,0 +1,40 @@
+.body-1440, 
+.background-1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.content-box {
+    padding: 0 120px;
+    margin: 0 auto;
+}
+
+.header-preview-bg {
+    background-image: url(../assets/preview_bg.jpg);
+}
+
+.header-bg {
+    background-color: rgba(242, 120, 92, 0.7);
+}
+
+.travel-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel-nav-container {
+    justify-self: center;
+    padding: 0;
+}
+
+.travel-nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-li {
+    list-style: none;
+    margin-left: 20px;
+}
