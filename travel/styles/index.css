@@ -4,6 +4,7 @@
     --text: #ffffff;
     --orange-text: #F2785C;
     --content-size: 1200px;
+    --blue-text: #0D606F;
 }
 
 body {
@@ -22,6 +23,13 @@ body {
     margin: 0 auto;
 }
 
+.h2-title {
+    font: 500 40px/53px 'Red Hat Text', sans-serif;
+    color: var(--orange-text);
+    text-align: center;
+    margin: 0;
+}
+
 /* Header */
 .header-container {
     background: rgba(242, 120, 92, 0.7);
@@ -30,18 +38,19 @@ body {
 
 .header-preview-container {
     background-image: url(../assets/preview_bg.jpg);
-    height: 765px;
+    padding-bottom: 221px;
 }
 
 .header.content-box {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
     height: 90px;
 }
 
 .header-logo {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    justify-self: start;
 }
 
 .nav-container {
@@ -74,7 +83,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     width: 103px;
-    font: 500 16px "Red Hat Text", serif;
+    font: 500 16px/21px "Red Hat Text", serif;
     color: var(--text);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -124,4 +133,182 @@ body {
     margin: 18px;
 }
 
-/* Next */
+/* Steps */
+
+.steps-container {
+    padding-top: 80px;
+    padding-bottom: 97px;
+}
+
+.steps-section {
+    padding: 0 11px;
+    width: 1177px;
+}
+
+.steps-title {
+    padding-bottom: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.steps-card1 {
+    justify-self: start;
+}
+
+.steps-card2 {
+    justify-self: center;
+}
+
+.steps-card3 {
+    justify-self: end;
+}
+
+.card-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.card-image1 {
+    padding: 28px 25px;
+    background: #F2785C;
+    border-radius: 16px;
+}
+
+.card-image2 {
+    padding: 24px;
+    background: #F2785C;
+    border-radius: 16px;
+}
+
+.card-image3 {
+    padding: 28px 20px;
+    background: #F2785C;
+    border-radius: 16px;
+}
+
+.card-text {
+    font: 400 20px/24px 'Aleo', sans-serif;
+    color: #0D606F;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+
+/* Destination */
+
+.destination-title {
+    padding-bottom: 1069px;
+}
+
+/* Stories */
+
+.stories-title {
+    padding-bottom: 40px;
+}
+
+.stories-footer-container {
+    background: url(../assets/stories-footer-bg.jpg);
+}
+
+.stories-white-container {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.stories.content-box {
+    padding: 40px 0;
+}
+
+.stories-card {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: top;
+}
+
+.stories-card-image {
+    filter: drop-shadow(0px 4px 4px #0D606F);
+}
+
+.stories-text-wrapper {
+    padding-left: 40px;
+}
+
+.stories-subtitle {
+    font: 400 35px/42px 'Aleo', sans-serif;
+    color: var(--blue-text);
+    margin: 0;
+}
+
+.stories-card-text {
+    font: 400 20px/24px 'Aleo', sans-serif;
+    color: var(--blue-text);
+    padding-top: 24px;
+    margin: 0;
+}
+
+.stories-card-text span {
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.stories-button {
+    display: block;
+    font: 500 24px/32px 'Red Hat Text', sans-serif;
+    color: var(--text);
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    padding: 13.5px 38px 13.5px 84px;
+    margin: 10px auto 0px;
+    position: relative;
+}
+
+.stories-button::before {
+    background: url(../assets/stories-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 31px;
+    top: 10px;
+}
+
+/* Footer */
+
+.footer.content-box {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60px;
+}
+
+.footer-copyright {
+    font: 500 16px/21px 'Red Hat Text', sans-serif;
+    margin: 0;
+    justify-self: center;
+}
+
+.footer-link-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link-item {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin: 0;
+}
