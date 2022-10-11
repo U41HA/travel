@@ -1,40 +1,127 @@
-.body-1440, 
-.background-1440 {
-    max-width: 1440px;
+/* General style */
+
+:root {
+    --text: #ffffff;
+    --orange-text: #F2785C;
+    --content-size: 1200px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1440px;
     margin: 0 auto;
+    color: var(--text);
 }
 
 .content-box {
-    padding: 0 120px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-.header-preview-bg {
+/* Header */
+.header-container {
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header-preview-container {
     background-image: url(../assets/preview_bg.jpg);
+    height: 765px;
 }
 
-.header-bg {
-    background-color: rgba(242, 120, 92, 0.7);
-}
-
-.travel-header{
-    display: flex;
+.header.content-box {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     align-items: center;
-    justify-content: space-between;
+    height: 90px;
 }
 
-.travel-nav-container {
-    justify-self: center;
-    padding: 0;
+.header-logo {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.travel-nav {
-    display: flex;
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: center;
     padding: 0;
+    gap: 42px;
     margin: 0;
 }
 
-.nav-li {
-    list-style: none;
-    margin-left: 20px;
+.header-nav {
+    padding: 0;
 }
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text);
+    font: 500 16px/21px 'Red Hat Text', sans-serif;
+}
+
+.header-button {
+    justify-self: end;
+    background-color: rgba(13, 96, 111, 1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 103px;
+    font: 500 16px "Red Hat Text", serif;
+    color: var(--text);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+}
+
+/* Preview */
+
+.preview-section {
+    width: 892px;
+}
+
+.preview-title {
+    font: 700 80px/96px 'Aleo', serif;
+    margin: 32px 0 0;
+}
+
+.preview-subtitle {
+    font: italic 700 20px/24px 'Aleo', serif;
+    margin-top: 33px;
+    margin-bottom: 46px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    height: 95px;
+    margin: 31px 0;
+}
+
+.search-text {
+    font: italic 400 24px/29px 'Aleo', serif;
+    color: var(--orange-text);
+    margin: 0 41px;
+}
+
+.search-button {
+    font: 500 24px/32px 'Red Hat Text', sans-serif;
+    padding: 13px 33px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    color: var(--text);
+    border: none;
+    margin: 18px;
+}
+
+/* Next */
