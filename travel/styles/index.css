@@ -3,7 +3,6 @@
 :root {
     --text: #ffffff;
     --orange-text: #F2785C;
-    --content-size: 1200px;
     --blue-text: #0D606F;
 }
 
@@ -17,13 +16,14 @@ body {
 }
 
 .wrapper {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     color: var(--text);
 }
 
 .content-box {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -138,7 +138,8 @@ body {
 }
 
 .header-preview-container {
-    background-image: url(../assets/preview_bg.jpg);
+    background: url(../assets/preview_bg.jpg) no-repeat center;
+    background-size: cover;
     padding-bottom: 221px;
 }
 
@@ -324,7 +325,8 @@ body {
 }
 
 .stories-footer-container {
-    background: url(../assets/stories-footer-bg.jpg);
+    background: url(../assets/stories-footer-bg.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .stories-white-container {
