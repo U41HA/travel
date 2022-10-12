@@ -183,7 +183,7 @@ body {
 /* Preview */
 
 .preview-section {
-    width: 892px;
+    max-width: 892px;
 }
 
 .preview-title {
@@ -223,7 +223,6 @@ body {
 
 .steps-section {
     padding: 0 11px;
-    width: 1177px;
 }
 
 .steps-title {
@@ -285,20 +284,23 @@ body {
     padding-bottom: 46px;
 }
 
+.destination-image-box {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .destination-image1 {
     display: block;
-    background: url(../assets/destination1.png);
-    width: 800px;
-    height: 800px;
-    position: relative;
+    width: 100%;
     margin: 0 auto;
 }
 
 .destination-text {
     font: 500 32px/42px 'Red Hat Text', sans-serif;
     position: absolute;
-    left: calc(50% - 108px/2 - 331px);
-    top: calc(50% - 42px/2 + 339px);
+    left: 2%;
+    top: 89%;
 }
 
 .destination-ellipse-container {
@@ -345,6 +347,8 @@ body {
 
 .stories-card-image {
     filter: drop-shadow(0px 4px 4px #0D606F);
+    width: 400px;
+    height: 250px;
 }
 
 .stories-text-wrapper {
