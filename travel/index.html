@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Text:wght@500&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="./assets/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
     <title>Travel</title>
 </head>
 
@@ -21,16 +23,16 @@
 
                 <header class="header-container">
                     <div class="header content-box">
-                        <img src="assets/main-logo.png" alt="Page logo" class="header-logo">
+                        <img src="assets/main-logo.svg" alt="Page logo" class="header-logo">
                         <nav class="header-nav">
                             <ul class="nav-container">
-                                <li class="nav-item"><a href="" class="nav-link">How It Works</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Plan Your Trip</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Destinations</a></li>
-                                <li class="nav-item"><a href="" class="nav-link">Travel Stories</a></li>
+                                <li class="nav-item"><a href="#how-it-work" class="nav-link">How It Works</a></li>
+                                <li class="nav-item"><a href="#how-it-work" class="nav-link">Plan Your Trip</a></li>
+                                <li class="nav-item"><a href="#destination" class="nav-link">Destinations</a></li>
+                                <li class="nav-item"><a href="#travel-stories" class="nav-link">Travel Stories</a></li>
                             </ul>
                         </nav>
-                        <button class="header-button">Login</button>
+                        <button class="header-button button-effect">Login</button>
                     </div>
                 </header>
 
@@ -46,7 +48,7 @@
                             <p class="search-text">
                                 What would you like to do?
                             </p>
-                            <button class="search-button">Start Planning</button>
+                            <button class="search-button button-effect">Start Planning</button>
                         </div>
                     </div>
                 </section>
@@ -54,7 +56,7 @@
             </div>
 
             <div class="steps-container">
-                <section class="steps-section content-box">
+                <section id="how-it-work" class="steps-section content-box">
                     <h2 class="steps-title h2-title">
                         3 STEPS TO THE PERFECT TRIP
                     </h2>
@@ -76,14 +78,25 @@
             </div>
 
             <div class="destination-container">
-                <section class="destination-section content-box">
+                <section id="destination" class="destination-section content-box">
                     <h2 class="destination-title h2-title">
                         POPULAR DESTINATIONS
                     </h2>
+                    <div class="destination-image-container">
+                        <div class="destination-image1">
+                            <span class="destination-text">JAPAN</span>
+                        </div>
+                        <div class="destination-ellipse-container">
+                            <div class="destination-ellipse"></div>
+                            <div class="destination-ellipse"></div>
+                            <div class="destination-ellipse"></div>
+                        </div>
+                        <button class="destination-button button-effect">Find More</button>
+                    </div>
                 </section>
             </div>
 
-            <section class="stories-section">
+            <section id="travel-stories" class="stories-section">
                 <h2 class="stories-title h2-title">
                     TRAVEL STORIES
                 </h2>
@@ -95,7 +108,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">10 Photos of Attractive Thailand</h3>
-                                    <p class="stories-card-text">
+                                    <p class="stories-card-text" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -112,7 +125,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">Canyonlands National Park, Utah</h3>
-                                    <p class="stories-card-text">
+                                    <p class="stories-card-text" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -129,7 +142,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">I left my heart in the Mountains!</h3>
-                                    <p class="stories-card-text">
+                                    <p class="stories-card-text" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -146,7 +159,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">The Longest journey in my life!</h3>
-                                    <p class="stories-card-text">
+                                    <p class="stories-card-text" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -158,7 +171,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <button class="stories-button">See More</button>
+                            <button class="stories-button button-effect">See More</button>
                         </div>
                     </div>
 
@@ -170,19 +183,23 @@
                             </p>
                             <ul class="footer-link-list">
                                 <li class="footer-link-item">
-                                    <a href="" class="footer-link">
-                                        <img src="./assets/icon-instagram.png" alt="Instagram link"
+                                    <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
+                                        class="footer-link" target="_blank">
+                                        <img src="./assets/icon-instagram.svg" alt="Instagram link"
                                             class="footer-link-icons">
                                     </a>
                                 </li>
                                 <li class="footer-link-item">
-                                    <a href="" class="footer-link">
-                                        <img src="./assets/icon-video.png" alt="Videos link" class="footer-link-icons">
+                                    <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
+                                        class="footer-link" target="_blank">
+                                        <img src="./assets/icon-video.svg" alt="Videos link" class="footer-link-icons">
                                     </a>
                                 </li>
                                 <li class="footer-link-item">
-                                    <a href="" class="footer-link">
-                                        <img src="./assets/icon-twitter.png" alt="Twitter link" class="footer-link-icons">
+                                    <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
+                                        class="footer-link" target="_blank">
+                                        <img src="./assets/icon-twitter.svg" alt="Twitter link"
+                                            class="footer-link-icons">
                                     </a>
                                 </li>
                             </ul>
