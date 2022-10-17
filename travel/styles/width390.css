@@ -1,0 +1,7 @@
+/* Media for viewport width = 390px */
+
+@media (max-width: 390px) {
+    .header.content-box {
+        flex-direction: column;
+    }
+}
