@@ -1,7 +1,255 @@
 /* Media for viewport width = 390px */
 
-@media (max-width: 390px) {
+@media (max-width: 410px) {
+    /* General */
+
+    .h2-title {
+        font: 500 14px/19px 'Red Hat Text', sans-serif;
+    }
+
+
+    /* Header */
     .header.content-box {
-        flex-direction: column;
+        min-height: 1px;
+    }
+
+    .content-box {
+        padding: 0 15px;
+    }
+
+    .header-container {
+        background: rgba(242, 120, 92, 0);
+        box-shadow: none;
+    }
+
+    .header-preview-container {
+        background-image: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../assets/preview_bg.jpg);
+        padding: 43px 0px 61px;
+    }
+
+    .header.content-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo-container {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+    }
+
+    .header-logo {
+        filter: none;
+        margin: 0;
+        clip: rect(0, 0, 30px, 30px);
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .header-burger-btn {
+        display: initial;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    /* preview */
+
+    .preview-title,
+    .preview-subtitle {
+        display: none;
+    }
+
+    .search-container {
+        margin: 61px 0 0;
+        height: 48px;
+        padding: 0 9px 0 16px;
+    }
+
+    .search-text {
+        font: italic 400 14px/17px 'Aleo', serif;
+        margin: 0;
+    }
+
+    .search-button {
+        font: 500 11px/15px 'Red Hat Text', sans-serif;
+        padding: 7.5px 9px;
+        margin: 0;
+    }
+
+    /* Steps */
+
+    .steps-container {
+        padding: 20px 0;
+    }
+
+    .card-container {
+        gap: 30px;
+    }
+
+    .steps-title {
+        padding-bottom: 20px;
+    }
+
+    .card-image {
+        display: block;
+        margin: 0;
+    }
+
+    .card-image1 {
+        padding: 19px 18px;
+        width: 34px;
+        height: 32px;
+    }
+
+    .card-image2 {
+        padding: 17.5px;
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+    }
+
+    .card-image3 {
+        padding: 20px 15px;
+        width: 40px;
+        height: 30px;
+        margin-left: auto;
+    }
+
+    .card-text {
+        font: 400 10px/12px 'Aleo', sans-serif;
+        color: #0D606F;
+        text-align: center;
+        margin: 0;
+        margin-top: 19px;
+    }
+
+    .steps-card1 .card-text {
+        text-align: left;
+    }
+
+    .steps-card3 .card-text {
+        text-align: right;
+    }
+
+    /* Destination */
+
+    .destination-title {
+        padding-bottom: 20px;
+    }
+
+    .destination-image-box {
+        width: 100%;
+        height: 210px;
+        background: url(../assets/mobile/Destination-image-m.png) center no-repeat;
+        z-index: -1;
+    }
+
+    .destination-ellipse-container {
+        padding: 0;
+        max-width: 36px;
+        margin-top: -20px;
+        z-index: 2;
+    }
+
+    .destination-ellipse {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .destination-button {
+        font: 500 11px/14px 'Red Hat Text', sans-serif;
+        padding: 7.5px 12px 7.5px 28px;
+        margin: 22px auto 20px;
+    }
+    
+    .destination-button:after {
+        width: 8px;
+        height: 6px;
+        background-size: cover;
+        left: 12px;
+        top: 12px;
+    }
+
+    .stories-title {
+        padding-bottom: 10px;
+    }
+
+    .stories.content-box {
+        padding: 10px 15px 13px;
+    }
+
+    .stories-card {
+        padding-bottom: 15px;
+        align-items: center;
+    }
+
+    .stories-card-image {
+        max-width: 155px;
+        max-height: 130px;
+    }
+    
+    .stories-text-wrapper {
+        padding-left: 10px;
+    }
+
+    .stories-subtitle {
+        font: 700 11px/13px 'Aleo', sans-serif;
+    }
+    
+    .stories-card-text {
+        font: 400 9px/11px 'Aleo', sans-serif;
+        padding-top: 10px;
+    }
+
+    .stories-card-text.large {
+        display: none;
+    }
+
+    .stories-card-text.small {
+        display: block;
+    }
+
+    .stories-button {
+        font: 500 11px/14px 'Red Hat Text', sans-serif;
+        padding: 8px 13.5px 8px 30px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .stories-button:after {
+        width: 8px;
+        height: 6px;
+        background-size: cover;
+        left: 12px;
+        top: 12px;
+    }
+
+    /* Footer */
+
+    .footer.content-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+    }
+
+    .footer-copyright {
+        display: none;
+    }
+
+    .footer-link-list {
+        justify-content: center;
+        align-content: center;
+    }
+    .footer-link-item {
+        padding: 0px;
+    }
+    .footer-link-item:nth-of-type(2) {
+        padding: 0 20px;
     }
 }

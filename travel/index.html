@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/width390.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +24,9 @@
 
                 <header class="header-container">
                     <div class="header content-box">
-                        <img src="assets/main-logo.svg" alt="Page logo" class="header-logo">
+                        <div class="header-logo-container">
+                            <img src="assets/main-logo.svg" alt="Page logo" class="header-logo">
+                        </div>
                         <nav class="header-nav">
                             <ul class="nav-container">
                                 <li class="nav-item"><a href="#how-it-work" class="nav-link">How It Works</a></li>
@@ -32,8 +35,28 @@
                                 <li class="nav-item"><a href="#travel-stories" class="nav-link">Travel Stories</a></li>
                             </ul>
                         </nav>
+                        <div class="header-burger-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <button class="header-button button-effect">Login</button>
+                        <nav class="burger-menu">
+                            <div class="burger-menu-close">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul class="burger-menu-container">
+                                <li class="burger-menu-item"><a href="#how-it-work" class="burger-menu-link">How It Works</a></li>
+                                <li class="burger-menu-item"><a href="#how-it-work" class="burger-menu-link">Plan Your Trip</a></li>
+                                <li class="burger-menu-item"><a href="#destination" class="burger-menu-link">Destinations</a></li>
+                                <li class="burger-menu-item"><a href="#travel-stories" class="burger-menu-link">Travel Stories</a></li>
+                                <li class="burger-menu-item"><a href="#" class="burger-menu-link">Account</a></li>
+                                <li class="burger-menu-item"><a href="#social-media" class="burger-menu-link">Social Media</a></li>
+                            </ul>
+                        </nav>
                     </div>
+                    
                 </header>
 
                 <section class="preview content-box">
@@ -84,8 +107,7 @@
                     </h2>
                     <div class="destination-image-container">
                         <div class="destination-image-box">
-                            <img src="./assets/destination1.png" alt="Japan image" class="destination-image1">
-                            <span class="destination-text">JAPAN</span>
+                            <span class="destination-text"></span>
                         </div>
                         <div class="destination-ellipse-container">
                             <div class="destination-ellipse"></div>
@@ -109,7 +131,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">10 Photos of Attractive Thailand</h3>
-                                    <p class="stories-card-text" lang="zxx">
+                                    <p class="stories-card-text large" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -118,6 +140,13 @@
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                         deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit... <span>Read More</span>
+                                    </p>
+                                    <p class="stories-card-text small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                        esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <span>Read More</span>
                                     </p>
                                 </div>
                             </div>
@@ -126,7 +155,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">Canyonlands National Park, Utah</h3>
-                                    <p class="stories-card-text" lang="zxx">
+                                    <p class="stories-card-text large" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -135,6 +164,13 @@
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                         deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit... <span>Read More</span>
+                                    </p>
+                                    <p class="stories-card-text small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                        esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <span>Read More</span>
                                     </p>
                                 </div>
                             </div>
@@ -143,7 +179,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">I left my heart in the Mountains!</h3>
-                                    <p class="stories-card-text" lang="zxx">
+                                    <p class="stories-card-text large" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -153,6 +189,13 @@
                                         deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit... <span>Read More</span>
                                     </p>
+                                    <p class="stories-card-text small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                        esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <span>Read More</span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="stories-card">
@@ -160,7 +203,7 @@
                                     class="stories-card-image">
                                 <div class="stories-text-wrapper">
                                     <h3 class="stories-subtitle">The Longest journey in my life!</h3>
-                                    <p class="stories-card-text" lang="zxx">
+                                    <p class="stories-card-text large" lang="zxx">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -169,6 +212,13 @@
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                         deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit... <span>Read More</span>
+                                    </p>
+                                    <p class="stories-card-text small">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                        esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <span>Read More</span>
                                     </p>
                                 </div>
                             </div>
@@ -182,7 +232,7 @@
                             <p class="footer-copyright">
                                 All Rights Reserved © Travel Portal
                             </p>
-                            <ul class="footer-link-list">
+                            <ul id="social-media" class="footer-link-list">
                                 <li class="footer-link-item">
                                     <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage0"
                                         class="footer-link" target="_blank">
@@ -210,6 +260,8 @@
             </section>
         </main>
     </div>
+    <script src="./script/index.js">
+    </script>
 </body>
 
 </html>
