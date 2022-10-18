@@ -40,9 +40,7 @@
     }
 
     .header-logo {
-        filter: none;
         margin: 0;
-        clip: rect(0, 0, 30px, 30px);
     }
 
     .nav-container {
