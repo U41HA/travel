@@ -1,17 +1,31 @@
 const menuButton = document.querySelector('.header-burger-btn');
+const burgerMenuBg = document.querySelector('.burger-menu-bg');
 const burgerMenu = document.querySelector('.burger-menu');
-const activeMenu = document.querySelector('.active');
+const burgerMenuClose = document.querySelector('.burger-menu-close');
 
-
-menuButton.addEventListener('click', function () {
+function toggleMenu() {
     menuButton.classList.toggle('active');
-    burgerMenu.classList.toggle('active');
+    burgerMenuBg.classList.toggle('active');
+}
+
+menuButton.addEventListener('click', toggleMenu);
+
+burgerMenuClose.addEventListener('click', toggleMenu);
+
+burgerMenuBg.addEventListener( 'click', (clickTarget) => {
+	const menuClick = clickTarget.composedPath().includes(burgerMenu);
+ 
+	if (!menuClick) {
+		toggleMenu();
+	}
 })
 
-burgerMenu.addEventListener('click', function () {
-    menuButton.classList.toggle('active');
-    burgerMenu.classList.toggle('active');
-})
+document.addEventListener('keydown', function(e) {
+	if( e.key === 'Escape' && menuButton.classList.contains('active') ){
+		toggleMenu();
+	}
+});
+
 
 
 
