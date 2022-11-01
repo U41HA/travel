@@ -396,12 +396,33 @@ body {
     padding-bottom: 46px;
 }
 
+.destination-image-container {
+    overflow: hidden;
+}
+
 .destination-image-box {
-    background: url(../assets/destination1.png) center no-repeat;
-    position: relative;
     margin: 0 auto;
-    width: 100%;
+    width: 2700px;
     height: 800px;
+    font-size: 60px;
+    overflow: hidden;
+    margin-left: -600px;
+    transition: all 0.5s;
+}
+
+.destination-image-box.first {
+    margin-left: 200px;
+    transition: all 0.5s;
+}
+.destination-image-box.last {
+    margin-left: -1400px;
+    transition: all 0.5s;
+}
+
+.destination-image {
+    width: 800px;
+    height: 800px;
+    display: inline-block;
 }
 
 .destination-text {
@@ -426,6 +447,14 @@ body {
     border-radius: 25px;
     background: rgba(242, 120, 92, 0.5);
     ;
+}
+
+.destination-ellipse.active {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background: rgba(242, 120, 92, 1);
+    transition: all 0.5s;
 }
 
 /* Stories */
