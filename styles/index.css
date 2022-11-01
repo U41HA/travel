@@ -198,6 +198,14 @@ body {
     top: 10px;
 }
 
+.leftArrow {
+    display: none;
+}
+
+.rightArrow {
+    display: none;
+}
+
 .stories-button {
     display: block;
     font: 500 24px/32px 'Red Hat Text', sans-serif;
