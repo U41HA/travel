@@ -79,7 +79,7 @@ let lastImage = document.querySelectorAll('.destination-image')[2];
 
 
 
-function takeResolution () {
+function takeResolution() {
 	let windowWidth = document.documentElement.clientWidth;
 	if (windowWidth < 411) {
 		firstImage.src = "./assets/mobile/mobile_destination-image1.jpg";
@@ -91,7 +91,7 @@ function takeResolution () {
 		lastImage.src = "./assets/destination-image-3.png";
 	}
 }
-setInterval (takeResolution, 500)
+setInterval(takeResolution, 10000)
 
 
 
@@ -151,5 +151,83 @@ leftArrow.addEventListener('click', replaceImgLeft);
 firstImage.addEventListener('click', replaceImgLeft);
 secondImage.addEventListener('click', desktopImgClick);
 lastImage.addEventListener('click', replaceImgRight);
+
+
+// popup
+
+let popupLogin = document.querySelector('.login.popup');
+let popupSign = document.querySelector('.sign.popup');
+let popupsBg = document.querySelectorAll('.popup-wrapper');
+let popupLoginBg = popupsBg[0];
+let popupSignBg = popupsBg[1];
+
+let loginButton = document.querySelector('.header-button');
+
+function togglePopupLogin() {
+	popupLoginBg.classList.toggle('active');
+};
+
+function togglePopupBgLogin(clickTarget) {
+	let popupClick = clickTarget.composedPath().includes(popupLogin);
+	if (!popupClick) {
+		togglePopupLogin();
+	}
+}
+
+loginButton.addEventListener('click', togglePopupLogin);
+popupLoginBg.addEventListener('click', togglePopupBgLogin);
+
+const loginContent = popupLogin.innerHTML;
+const registerContent = popupSign.innerHTML
+
+let registerButton = document.querySelector('.login.popup-text.register').firstElementChild;
+
+function replacePopupContentLogin() {
+	popupLogin.innerHTML = loginContent;
+	let registerButton = document.querySelector('.login.popup-text.register').firstElementChild;
+	registerButton.addEventListener('click', replacePopupContentRegister);
+
+	let logButton = document.querySelector('.login.popup-button.sign-in');
+	logButton.addEventListener('click', sendData);
+
+}
+
+function replacePopupContentRegister() {
+	popupLogin.innerHTML = registerContent;
+	let backToLogInButton = document.querySelector('.sign.popup-text').firstElementChild;
+	backToLogInButton.addEventListener('click', replacePopupContentLogin);
+
+	let regButton = document.querySelector('.sign.popup-button.sign-in');
+	regButton.addEventListener('click', sendData);
+}
+
+
+registerButton.addEventListener('click', replacePopupContentRegister);
+
+
+
+// send Email and Password 
+
+let logButton = document.querySelector('.login.popup-button.sign-in');
+logButton.addEventListener('click', sendData);
+
+let regButton = document.querySelector('.sign.popup-button.sign-in');
+regButton.addEventListener('click', sendData);
+
+function sendData() {
+	let userEmail = document.querySelector('input[type = "email"]');
+	let emailValue = userEmail.value;
+
+	let userPassword = document.querySelector('input[type = "password"]');
+	let passwordValue = userPassword.value;
+
+	alert('Your Email: ' + emailValue + '\n' + 'Your password: ' + passwordValue)
+}
+
+// Account button
+
+let accountButton = document.querySelectorAll('.burger-menu-link')[4];
+accountButton.addEventListener('click', togglePopupLogin);
+
 
 
