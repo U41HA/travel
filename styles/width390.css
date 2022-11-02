@@ -140,9 +140,9 @@
         padding-bottom: 20px;
     }
 
-   
 
-    .destination-image-container{
+
+    .destination-image-container {
         position: relative;
     }
 
@@ -154,7 +154,6 @@
         position: absolute;
         top: 90px;
         left: 5px;
-        z-index: 5;
     }
 
     .rightArrow {
@@ -167,7 +166,7 @@
         right: 5px;
     }
 
-    .inactiveArrow{
+    .inactiveArrow {
         opacity: 0.5;
     }
 
@@ -181,6 +180,7 @@
         margin-left: 0px;
         transition: all 0.5s;
     }
+
     .destination-image-box.last {
         margin-left: -750px;
         transition: all 0.5s;
@@ -204,20 +204,20 @@
         width: 8px;
         height: 8px;
     }
-    
+
     .destination-ellipse.active {
         width: 8px;
         height: 8px;
         background: rgba(242, 120, 92, 1);
 
     }
-    
+
     .destination-button {
         font: 500 11px/14px 'Red Hat Text', sans-serif;
         padding: 7.5px 12px 7.5px 28px;
         margin: 22px auto 20px;
     }
-    
+
     .destination-button:after {
         width: 8px;
         height: 6px;
@@ -243,7 +243,7 @@
         max-width: 155px;
         max-height: 130px;
     }
-    
+
     .stories-text-wrapper {
         padding-left: 10px;
     }
@@ -251,7 +251,7 @@
     .stories-subtitle {
         font: 700 11px/13px 'Aleo', sans-serif;
     }
-    
+
     .stories-card-text {
         font: 400 9px/11px 'Aleo', sans-serif;
         padding-top: 10px;
@@ -271,7 +271,7 @@
         margin: 0 auto;
         position: relative;
     }
-    
+
     .stories-button:after {
         width: 8px;
         height: 6px;
@@ -297,10 +297,48 @@
         justify-content: center;
         align-content: center;
     }
+
     .footer-link-item {
         padding: 0px;
     }
+
     .footer-link-item:nth-of-type(2) {
         padding: 0 20px;
     }
+
+    /* Popup */
+
+    .popup {
+        width: 370px;
+        padding: 25px 5px;
+    }
+
+    .popup-button.facebook {
+        padding: 0px 0px 0px 30px;
+        height: 54px;
+    }
+
+    .popup-button.google {
+        padding: 0px 0px 0px 30px;
+        height: 54px;
+    }
+
+    .login.popup-button.sign-in {
+        padding: 0px;
+        height: 54px;
+    }
+
+    .popup-button.facebook::after {
+        left: 40px;
+    }
+
+    .popup-button.google::after {
+        left: 40px;
+    }
+
+    .sign.popup-button {
+        padding: 0;
+        height: 54px;
+    }
+
 }

@@ -1,4 +1,3 @@
-
 /* General style */
 
 :root {
@@ -133,7 +132,7 @@ body {
     transition: all 0.2s;
 }
 
-.burger-menu-close span:nth-of-type(1){
+.burger-menu-close span:nth-of-type(1) {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
@@ -238,9 +237,9 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(198, 198, 198, 0.2);
     border-radius: 10px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .button-effect:hover:before {
@@ -422,6 +421,7 @@ body {
     margin-left: 200px;
     transition: all 0.5s;
 }
+
 .destination-image-box.last {
     margin-left: -1430px;
     transition: all 0.5s;
@@ -555,4 +555,180 @@ body {
 .footer-link {
     text-decoration: none;
     margin: 0;
+}
+
+/* Login popup */
+
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: all 2s;
+}
+
+.popup-wrapper.active {
+    display: inherit;
+}
+
+.popup {
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 560px;
+    padding: 25px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-title {
+    font: 700 32px/38px 'Aleo', sans-serif;
+    color: var(--blue-text);
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.popup-button {
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 15px);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    font: 400 20px/26px 'Red Hat Text', sans-serif;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.popup-button.facebook {
+    background: #1877F2;
+    color: var(--text);
+    padding: 15px 145px 15px 195px;
+
+}
+
+.popup-button.facebook::after {
+    content: '';
+    background: url(../assets/facebook-logo.svg) no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 164px;
+}
+
+.popup-button.google {
+    background: #FFFFFF;
+    color: var(--blue-text);
+    padding: 15px 150px 15px 196px;
+}
+
+.popup-button.google::after {
+    content: '';
+    background: url(../assets/google-logo.svg) no-repeat center center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 174px;
+}
+
+.popup-span-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.popup-line {
+    width: 261px;
+    border-top: 1px solid rgba(13, 96, 111, 0.5);
+}
+
+.popup-text.or {
+    font: 700 20px/24px 'Aleo', sans-serif;
+    color: rgba(13, 96, 111, 0.5);
+}
+
+.popup-input-container {
+    width: 100%;
+}
+
+
+.popup label {
+    font: 400 16px/19px 'Aleo', sans-serif;
+    color: var(--blue-text);
+    padding-bottom: 5px;
+}
+
+.popup input {
+    display: block;
+    width: calc(100% - 15px);
+    height: 54px;
+    border: none;
+    padding: 0px 0px 0px 15px;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font: 400 16px/19px "Red Hat Text", sans-serif;
+    color: var(--blue-text);
+    margin-bottom: 20px;
+}
+
+.popup input::placeholder {
+    color: gray;
+    opacity: 0.4;
+}
+
+.popup input:focus {
+    outline: 0;
+    box-shadow: 2px 2px rgba(13, 96, 111, 0.3);
+}
+
+.popup-button.sign-in {
+    background-color: #0D606F;
+    color: var(--text);
+    padding: 14px 240px;
+    margin-bottom: 10px;
+}
+
+.popup-text {
+    font: 700 15px/18px 'Aleo', sans-serif;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    text-align: center;
+    margin: 0px;
+}
+
+.popup-text.bold {
+    color: rgba(13, 96, 111, 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup-text.forgot {
+    margin: 0px 0px 20px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(13, 96, 111, 0.5);
+}
+
+.popup-text.register {
+    margin: 0px;
+}
+
+.sign.popup-button {
+    margin-bottom: 26px;
+    width: 100%;
+}
+
+.sign.popup-text {
+    padding-top: 20px;
+    border-top: 1px solid rgba(13, 96, 111, 0.5);
 }

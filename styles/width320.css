@@ -27,4 +27,22 @@
     .rightArrow {
         top: 70px;
     }
+
+    /* popup */
+    .popup {
+        width: 300px;
+        padding: 15px 5px;
+    }
+
+    .popup-title {
+        font-size: 25px;
+    }
+
+    .popup-button.facebook::after {
+        left: 10px;
+    }
+
+    .popup-button.google::after {
+        left: 10px;
+    }
 }
