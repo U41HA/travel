@@ -85,6 +85,10 @@ function takeResolution () {
 		firstImage.src = "./assets/mobile/mobile_destination-image1.jpg";
 		secondImage.src = "./assets/mobile/mobile_destination-image2.jpg";
 		lastImage.src = "./assets/mobile/mobile_destination-image3.jpg";
+	} else {
+		firstImage.src = "./assets/destination-image-1.png";
+		secondImage.src = "./assets/destination-image-2.png";
+		lastImage.src = "./assets/destination-image-3.png";
 	}
 }
 setInterval (takeResolution, 500)
