@@ -1,0 +1,30 @@
+/* Media for viewport width = 320px */
+
+@media (max-width: 320px) {
+
+    .destination-image-box {
+        width: 920px;
+        height: 170px;
+        margin-left: -305px;
+    }
+
+
+    .destination-image-box.last {
+        margin-left: -610px;
+        transition: all 0.5s;
+    }
+
+    .destination-image {
+        width: 290px;
+        height: 170px;
+        border-radius: 16px;
+    }
+
+    .leftArrow {
+        top: 70px;
+    }
+
+    .rightArrow {
+        top: 70px;
+    }
+}

@@ -140,11 +140,7 @@
         padding-bottom: 20px;
     }
 
-    .destination-image-box {
-        height: 210px;
-        width: 1200px;
-        margin-left: -375px;
-    }
+   
 
     .destination-image-container{
         position: relative;
@@ -173,6 +169,12 @@
 
     .inactiveArrow{
         opacity: 0.5;
+    }
+
+    .destination-image-box {
+        height: 210px;
+        width: 1200px;
+        margin-left: -375px;
     }
 
     .destination-image-box.first {
