@@ -72,21 +72,28 @@ ellipseContainer.addEventListener('click', replaceImage);
 
 // Replace destination image on 410px resolution and add listener on arrow
 
-const windowWidth = document.documentElement.clientWidth;
+
 let firstImage = document.querySelectorAll('.destination-image')[0];
 let secondImage = document.querySelectorAll('.destination-image')[1];
 let lastImage = document.querySelectorAll('.destination-image')[2];
 
-let rightArrow = document.querySelector('.rightArrow')
-let leftArrow = document.querySelector('.leftArrow')
 
-if (windowWidth < 411) {
-	firstImage.src = "./assets/mobile/mobile_destination-image1.jpg";
-	secondImage.src = "./assets/mobile/mobile_destination-image2.jpg";
-	lastImage.src = "./assets/mobile/mobile_destination-image3.jpg";
+
+function takeResolution () {
+	let windowWidth = document.documentElement.clientWidth;
+	if (windowWidth < 411) {
+		firstImage.src = "./assets/mobile/mobile_destination-image1.jpg";
+		secondImage.src = "./assets/mobile/mobile_destination-image2.jpg";
+		lastImage.src = "./assets/mobile/mobile_destination-image3.jpg";
+	}
 }
+setInterval (takeResolution, 500)
+
+
 
 // Arrow replace image
+let rightArrow = document.querySelector('.rightArrow');
+let leftArrow = document.querySelector('.leftArrow');
 
 function replaceImgRight(e) {
 	if (leftArrow.classList.contains('inactiveArrow')) {
