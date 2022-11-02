@@ -91,7 +91,7 @@ function takeResolution() {
 		lastImage.src = "./assets/destination-image-3.png";
 	}
 }
-setInterval(takeResolution, 10000)
+setInterval(takeResolution, 500)
 
 
 
