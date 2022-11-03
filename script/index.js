@@ -137,8 +137,8 @@ function replaceImgLeft(e) {
 		firstDot.classList.add('active');
 		leftArrow.classList.toggle('inactiveArrow');
 	}
-
 }
+
 function desktopImgClick() {
 	if (imageContainer.classList.contains('first')) {
 		replaceImgRight();
@@ -216,6 +216,8 @@ logButton.addEventListener('click', sendData);
 let regButton = document.querySelector('.sign.popup-button.sign-in');
 regButton.addEventListener('click', sendData);
 
+document.addEventListener('keydown', sendDataEnter);
+
 function sendData() {
 	let userEmail = document.querySelector('input[type = "email"]');
 	let emailValue = userEmail.value;
@@ -224,6 +226,12 @@ function sendData() {
 	let passwordValue = userPassword.value;
 
 	alert('Your Email: ' + emailValue + '\n' + 'Your password: ' + passwordValue)
+}
+
+function sendDataEnter(e) {
+	if (e.key === 'Enter' && (popupLoginBg.classList.contains('active'))) {
+		sendData();
+	}
 }
 
 // Account button
