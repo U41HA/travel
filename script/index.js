@@ -91,7 +91,9 @@ function takeResolution() {
 		lastImage.src = "./assets/destination-image-3.png";
 	}
 }
-setInterval(takeResolution, 500)
+// setInterval(takeResolution, 500)
+
+window.addEventListener('resize', takeResolution);
 
 
 

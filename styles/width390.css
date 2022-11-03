@@ -315,17 +315,17 @@
 
     .popup-button.facebook {
         padding: 0px 0px 0px 30px;
-        height: 54px;
+        height: 45px;
     }
 
     .popup-button.google {
         padding: 0px 0px 0px 30px;
-        height: 54px;
+        height: 45px;
     }
 
     .login.popup-button.sign-in {
         padding: 0px;
-        height: 54px;
+        height: 45px;
     }
 
     .popup-button.facebook::after {
@@ -338,7 +338,11 @@
 
     .sign.popup-button {
         padding: 0;
-        height: 54px;
+        height: 40px;
+    }
+
+    .popup input {
+        height: 40px;
     }
 
 }
