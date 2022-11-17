@@ -117,9 +117,19 @@
                         <div class="leftArrow"></div>
                         <div class="rightArrow"></div>
                         <div class="destination-image-box">
-                            <img src="./assets/destination-image-1.png" alt="Japan image" class="destination-image">
-                            <img src="./assets/destination-image-2.png" alt="Spain image" class="destination-image">
-                            <img src="./assets/destination-image-3.png" alt="USA image" class="destination-image">
+                            <picture>
+                                <source media="(max-width: 410px)" srcset="./assets/destination-image-1-360w.jpg">
+                                <img src="./assets/destination-image-1-800w.png" alt="Japan image" class="destination-image">
+                            </picture>
+                            <picture>
+                                <source media="(max-width: 410px)" srcset="./assets/destination-image-2-360w.jpg">
+                                <img src="./assets/destination-image-2-800w.png" alt="Spain image" class="destination-image">
+                            </picture>
+                            <picture>
+                                <source media="(max-width: 410px)" srcset="./assets/destination-image-3-360w.jpg">
+                                <img src="./assets/destination-image-3-800w.png" alt="USA image" class="destination-image">
+                            </picture>
+                            
                         </div>
                         <div class="destination-ellipse-container">
                             <div class="destination-ellipse"></div>

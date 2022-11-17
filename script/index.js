@@ -77,26 +77,6 @@ let firstImage = document.querySelectorAll('.destination-image')[0];
 let secondImage = document.querySelectorAll('.destination-image')[1];
 let lastImage = document.querySelectorAll('.destination-image')[2];
 
-
-
-function takeResolution() {
-	let windowWidth = document.documentElement.clientWidth;
-	if (windowWidth < 411) {
-		firstImage.src = "./assets/mobile/mobile_destination-image1.jpg";
-		secondImage.src = "./assets/mobile/mobile_destination-image2.jpg";
-		lastImage.src = "./assets/mobile/mobile_destination-image3.jpg";
-	} else {
-		firstImage.src = "./assets/destination-image-1.png";
-		secondImage.src = "./assets/destination-image-2.png";
-		lastImage.src = "./assets/destination-image-3.png";
-	}
-}
-// setInterval(takeResolution, 500)
-
-window.addEventListener('resize', takeResolution);
-
-
-
 // Arrow replace image
 let rightArrow = document.querySelector('.rightArrow');
 let leftArrow = document.querySelector('.leftArrow');
